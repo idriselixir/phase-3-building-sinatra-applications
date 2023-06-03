@@ -1,4 +1,8 @@
 require 'sinatra'
+# config.ru
+require_relative "./config/environment"
+
+run ApplicationController
 
 class App < Sinatra::Base
 
@@ -7,5 +11,4 @@ class App < Sinatra::Base
   end
   
 end
-
 run App
